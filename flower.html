@@ -8,6 +8,16 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>flowers</title>
 </head>
+    <audio id="bg-music" src="29b03d456e905f627457f5c1a46102e8.mp3" autoplay loop></audio>
+<script>
+  // Untuk memastikan musik bisa autoplay setelah user berinteraksi
+  window.addEventListener('click', () => {
+      const music = document.getElementById('bg-music');
+      if (music.paused) {
+          music.play();
+      }
+  });
+</script>
 <body class="container">
   <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
     <div class="night"></div>
